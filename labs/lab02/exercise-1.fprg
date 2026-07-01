@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-01 11:23:40 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMDo1MToxMCBBTTsyNzI2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMTsxMToyMzo0MCBBTTsxOzI4Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ringgitAmount" type="Integer" array="False" size=""/>
+            <input variable="ringgitAmount"/>
+            <assign variable="commission" expression="ringgitAmount*2/100"/>
+            <assign variable="remainingRinggit" expression="ringgitAmount-commission"/>
+            <assign variable="bahtAmount" expression="remainingRinggit*exchangerate"/>
+            <declare name="bahtAmount" type="Integer" array="False" size=""/>
+            <output expression="bahtAmount" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
