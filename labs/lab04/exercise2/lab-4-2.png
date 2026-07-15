@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-4-2"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-15 12:32:44 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMjoxOTozNCBQTTsyNzU4"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0xNTsxMjozMjo0NCBQTTsxOzI4NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="income" type="Real" array="False" size=""/>
+            <input variable="income"/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <if expression="income&gt;=50000.00">
+                <then>
+                    <if expression="income&gt;=50000.00&amp;&amp;income&lt;100000.00">
+                        <then>
+                            <assign variable="tax" expression="0.01"/>
+                        </then>
+                        <else>
+                            <if expression="income&gt;=100000.00">
+                                <then>
+                                    <assign variable="tax" expression="0.02"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="tax" expression="0"/>
+                </else>
+            </if>
+            <declare name="totalTax" type="Real" array="False" size=""/>
+            <assign variable="totalTax" expression="tax*income"/>
+            <output expression="totalTax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
