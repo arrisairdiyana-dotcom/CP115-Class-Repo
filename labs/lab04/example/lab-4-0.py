@@ -5,4 +5,3 @@ else:
     unitPrice = 7
 finalPrice = magazineNumber * unitPrice
 print(finalPrice)
-
